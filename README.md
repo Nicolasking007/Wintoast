@@ -42,7 +42,7 @@
 
 ```commandline
 set ws=WScript.CreateObject("WScript.Shell")
-ws.Run "E:\CodeShare\toast\Run.bat /start",0
+ws.Run "E:\Wintoast\Run.bat /start",0
 
 ```
 
