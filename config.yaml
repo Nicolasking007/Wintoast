@@ -1,0 +1,50 @@
+content:
+    -
+        date: '09'                              # 提醒时间
+        title: 工作前喝一杯水                     # 标题
+        body: 镇定精神，努力工作                   # 内容
+        icon: '/water.gif'                     # 图标
+        duration: long                         # 参数 short、long
+        label: 逛逛掘金                          #  button按钮文案
+        launch: 'https://juejin.cn/pins/new'   # 跳转路径
+    -
+        date: '11'
+        title: 工作间隙喝一杯水
+        body: 站会儿，放松情绪，补充水分
+        icon: '/water.gif'
+        duration: long
+        label:
+        launch:
+    -
+        date: '14'
+        title: 午餐后一小时一杯水
+        body: 促进消化保持身材
+        icon: '/water.gif'
+        duration: long
+        label: 刷刷微博
+        launch: "https://weibo.com/newlogin?tabtype=search&openLoginLayer=0&url=https%3A%2F%2Fweibo.com%2Ftv%2Fhome"
+    -
+        date: '16'
+        title: 下午喝一杯水
+        body: 起来走走，消除疲劳，振奋精神
+        icon: '/water.gif'
+        duration: long
+        label:
+        launch:
+    -
+        date: '18'
+        title: 快下班啦~~~
+        body: 归家途中，喝水增加饱腹感
+        icon: '/water.gif'
+        duration: long
+        label: 刷刷微博
+        launch: 'https://weibo.com/newlogin?tabtype=search&openLoginLayer=0&url=https%3A%2F%2Fweibo.com%2Ftv%2Fhome'
+
+
+
+MAIN:
+  app_id: 'D:\Program Files (x86)\Tencent\WeChat\WeChat.exe'   # 应用图标  获取方式：管理员权限  输入：Get-StartApps 即可查询appid
+  start_time: '09:10:00'   # 程序后台执行时间
+  end_time: '18:10:00'     # 程序后台结束时间
+
+
