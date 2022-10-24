@@ -22,7 +22,7 @@ content:
         icon: '/water.gif'
         duration: long
         label: 刷刷微博
-        launch: "https://weibo.com/newlogin?tabtype=search&openLoginLayer=0&url=https%3A%2F%2Fweibo.com%2Ftv%2Fhome"
+        launch: 'https://weibo.com/newlogin?tabtype=search&openLoginLayer=0&url=https%3A%2F%2Fweibo.com%2Ftv%2Fhome'
     -
         date: '16'
         title: 下午喝一杯水

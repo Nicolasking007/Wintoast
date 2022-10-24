@@ -5,11 +5,11 @@
 
 - 全屏显示 
 
-![](./image/09.png)
+![](https://pic6.58cdn.com.cn/nowater/webim/big/n_v28eefb0abf03642a7bcd323f57ecb58af.png)
 
 - 通知中心
 
-![](./image/09_1.png)
+![](https://pic2.58cdn.com.cn/nowater/webim/big/n_v291b9796ffe7649549af34f0688f18772.png)
 
 ## 借助window 任务计划程序 定时执行
 
