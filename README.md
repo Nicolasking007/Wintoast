@@ -1,5 +1,10 @@
 # Wintoast
 借助win10+消息通知，提醒做某些事情
+- 定时提醒喝水推送消息
+- 每天早报推送消息
+- 微博、知乎热门推送消息
+- 伪装其他应用发送推送消息（修改app_id即可 - 详见demo）
+- ~
 
 ## 效果预览
 
@@ -7,6 +12,8 @@
 
 ![](https://pic6.58cdn.com.cn/nowater/webim/big/n_v28eefb0abf03642a7bcd323f57ecb58af.png)
 
+
+![img.png](./image/ddimg.png)
 - 通知中心
 
 ![](https://pic2.58cdn.com.cn/nowater/webim/big/n_v291b9796ffe7649549af34f0688f18772.png)
@@ -43,7 +50,6 @@
 ```commandline
 set ws=WScript.CreateObject("WScript.Shell")
 ws.Run "E:\Wintoast\Run.bat /start",0
-
 ```
 
 - 复制文本，修改后缀为 `.bat`
@@ -54,5 +60,6 @@ python wintoast.py
 ```
 
 ### 获取APPID
+输入命令：`Get-StartApps`  获取app_id
 
 ![img.png](./image/id_img.png)
