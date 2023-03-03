@@ -1,44 +1,59 @@
 content:
     -
-        date: '09'                              # 提醒时间
-        title: 工作前喝一杯水                     # 标题
-        body: 镇定精神，努力工作                   # 内容
-        icon: '/water.gif'                     # 图标
-        duration: long                         # 参数 short、long
-        label: 逛逛掘金                          #  button按钮文案
-        launch: 'https://juejin.cn/pins/new'   # 跳转路径
+        type: HeroButton                           # 通知类型  必填
+        date: "09:00"                              # 提醒时间  必填
+        title: 工作前喝一杯水                     # 标题  必填
+        body: 镇定精神，努力工作                   # 内容  必填
+        icon: '/gg1.png'                     # 图标    选填
+        image: '/water.gif'                                # 封面图
+        duration: long                         # 参数 short、long  必填
+        label: 逛逛掘金                          #  button按钮文案   选填
+        launch: 'https://juejin.cn/pins/new'   # 跳转路径  选填
+        audio:                                 # 音频文件  选填
     -
-        date: '11'
+        type: HeroImage
+        date: "10:34"
         title: 工作间隙喝一杯水
         body: 站会儿，放松情绪，补充水分
         icon: '/water.gif'
+        image: '/water.gif'
         duration: long
         label:
         launch:
+        audio:
     -
-        date: '14'
+        type: HeroButton
+        date: '15:00'
         title: 午餐后一小时一杯水
         body: 促进消化保持身材
         icon: '/water.gif'
+        image: '/water.gif'
         duration: long
         label: 刷刷微博
-        launch: 'https://weibo.com/newlogin?tabtype=search&openLoginLayer=0&url=https%3A%2F%2Fweibo.com%2Ftv%2Fhome'
+        launch: "https://weibo.com/newlogin?tabtype=search&openLoginLayer=0&url=https%3A%2F%2Fweibo.com%2Ftv%2Fhome"
+        audio:
     -
-        date: '16'
+        type: HeroImage
+        date: '16:00'
         title: 下午喝一杯水
         body: 起来走走，消除疲劳，振奋精神
         icon: '/water.gif'
+        image: '/water.gif'
         duration: long
         label:
         launch:
+        audio:
     -
-        date: '18'
+        type: InlineButton
+        date: '18:00'
         title: 快下班啦~~~
         body: 归家途中，喝水增加饱腹感
         icon: '/water.gif'
+        image: '/water.gif'
         duration: long
         label: 刷刷微博
         launch: 'https://weibo.com/newlogin?tabtype=search&openLoginLayer=0&url=https%3A%2F%2Fweibo.com%2Ftv%2Fhome'
+        audio:
 
 
 
