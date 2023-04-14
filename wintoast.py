@@ -35,43 +35,50 @@ app_id = data['MAIN']['app_id']
 
 def reminder(name):
     for i in pylist:
+        params = {
+            'title': i['title'],
+            'body': i['body'],
+            'app_id': app_id,
+            'duration': i['duration']
+        }
         if name == 'AdaptiveText':
-            toast(i['title'], i['body'], app_id=app_id,
-                  duration=i['duration'])
+            pass
         elif name == 'InlineImage':
-            toast(i['title'], i['body'], app_id=app_id,
-                  icon=r"" + os.getcwd() + i['icon'],
-                  image=r"" + os.getcwd() + i['image'],
-                  duration=i['duration'])
+            params['icon'] = r"" + os.getcwd() + i['icon']
+            params['image'] = r"" + os.getcwd() + i['image']
         elif name == 'InlineButton':
-            toast(i['title'], i['body'], app_id=app_id,
-                  image=r"" + os.getcwd() + i['image'],
-                  duration='long',
-                  button={'activationType': 'protocol', 'arguments': i['launch'],
-                          'content': i['label']})
+            params['image'] = r"" + os.getcwd() + i['image']
+            params['duration'] = 'long'
+            button = {
+                'activationType': 'protocol',
+                'arguments': i['launch'],
+                'content': i['label']
+            }
+            params['button'] = button
         elif name == 'HeroImage':
             image = {
                 'src': r"" + os.getcwd() + i['image'],
                 'placement': 'hero'
             }
-            toast(i['title'], i['body'], app_id=app_id,
-                  image=image,
-                  duration=i['duration'])
+            params['image'] = image
         elif name == 'HeroButton':
             image = {
                 'src': r"" + os.getcwd() + i['image'],
                 'placement': 'hero'
             }
-            toast(i['title'], i['body'], app_id=app_id,
-                  image=image,
-                  duration=i['duration'],
-                  button={'activationType': 'protocol', 'arguments': i['launch'],
-                          'content': i['label']})
+            button = {
+                'activationType': 'protocol',
+                'arguments': i['launch'],
+                'content': i['label']
+            }
+            params['image'] = image
+            params['button'] = button
         elif name == 'Audio':
-            toast(i['title'], i['body'], app_id=app_id,
-                  icon=r"" + os.getcwd() + i['icon'],
-                  duration=i['duration'],
-                  audio=i['audio'])
+            params['icon'] = r"" + os.getcwd() + i['icon']
+            params['audio'] = i['audio']
+        else:
+            pass
+        toast(**params)
 
 
 def run():
