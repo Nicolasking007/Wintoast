@@ -18,16 +18,7 @@ from config_handler import YamlHandler
 
 data = YamlHandler('config.yaml').read_yaml()
 pylist = data['content']
-'''
-代码实现每天9点开始定时，下午6点10分结束定时；
-每天9，11，14，16，18时提醒喝水；
-两个list列表设置提醒内容
-'''
 app_id = data['MAIN']['app_id']
-
-
-# start_time = time.strftime('%Y-%m-%d ', time.localtime(time.time())) + data['MAIN']['start_time']
-# end_time = time.strftime('%Y-%m-%d ', time.localtime(time.time())) + data['MAIN']['end_time']
 
 
 # 获取方式： 管理员权限  输入：Get-StartApps 即可查询appid

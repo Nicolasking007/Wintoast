@@ -23,7 +23,7 @@ content:
         audio:
     -
         type: HeroButton
-        date: '15:00'
+        date: '15:15'
         title: 午餐后一小时一杯水
         body: 促进消化保持身材
         icon: '/water.gif'

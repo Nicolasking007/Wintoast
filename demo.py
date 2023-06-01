@@ -10,12 +10,22 @@
 
 
 import os
+from win11toast import toast
 from winotify import Notification
 
 
-toast = Notification(app_id='D:\Program Files (x86)\DingDing\DingtalkLauncher.exe',
-                     title='***',
-                     icon=r"" + os.getcwd() + "/logo.ico",
-                     msg='晚上***游戏',
-                     duration='long')
-toast.show()
+# toast = Notification(app_id='D:\Program Files (x86)\DingDing\DingtalkLauncher.exe',
+#                      title='***',
+#                      icon=r"" + os.getcwd() + "/logo.ico",
+#                      msg='晚上***游戏',
+#                      duration='long')
+# toast.show()
+
+
+image = {
+    'src': r"" + os.getcwd() + '/water.gif',
+    'placement': 'hero'
+}
+
+res = toast('Hello', 'Hello from Python', image=image, app_id = 'D:\Program Files (x86)\Tencent\WeChat\WeChat.exe')
+print('res', res)
